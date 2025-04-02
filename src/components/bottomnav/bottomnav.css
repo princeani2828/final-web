@@ -1,0 +1,59 @@
+
+/* Bottom navigation styles */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1c1c1e;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .nav-icon {
+    width: 2rem;
+    height: 2rem;
+    color: #9ca3af;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-icon:hover,
+  .nav-icon.active {
+    color: #22c55e;
+  }
+  
+  .scan-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #e5f5d6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1.5rem;
+    cursor: pointer;
+  }
+  
+  .scan-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: black;
+  }
+  
+  /* Cart page styles */
+  .cart-header {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #22c55e;
+  }
+  

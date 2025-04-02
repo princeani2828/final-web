@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'); /* Import Roboto font */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #d6fe50 0%, #f6d365 50%, #fda085 100%); /* Gradient background */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #f9f9f9;
+  border-radius: 10px;
+
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-picture-container {
+  margin-right: 20px;
+}
+
+.profile-picture {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.default-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+.user-details {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333; /* Set label color */
+}
+
+.form-group p {
+  margin: 0;
+  color: #333; /* Set text color */
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Add gap between buttons */
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line if needed */
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #12bb1d; /* Set button background color */
+  color: #333; /* Set button text color */
+  margin: 10px 0; /* Add margin to create gap between buttons */
+  margin-right: 10px; /* Add right margin to create gap between buttons */
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth hover effect */
+}
+
+.btn:hover {
+  background-color: #4cae4c; /* Change background color on hover */
+  color: #000; /* Change text color on hover */
+}
+
+.edit-button {
+  background-color: #12bb1d;
+  color: #333;
+}
+
+.update-button {
+  background-color: #12bb1d;
+  color: #333;
+}
+
+.logout-button {
+  background-color: #12bb1d;
+  color: #333;
+}
+
+.home-button {
+  background-color: #12bb1d;
+  color: #333;
+}
+
+.stylish-text {
+  font-family: 'Roboto', sans-serif; /* Change to Roboto font */
+  font-size: 2.5em;
+  color: #000000;
+  font-size:24px;
+  text-align: center; /* Center the welcome text */
+  margin-bottom: 20px;
+}
+
+/* Media Query for Smartphones */
+@media (max-width: 600px) {
+  .profile-container {
+    padding: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0; /* Remove right margin for mobile view */
+  }
+
+  .profile-actions {
+    flex-direction: column;
+    gap: 10px; /* Ensure gap between buttons in mobile view */
+  }
+}
+
+/* Media Query for 1920 x 1080 (Full HD) */
+@media (max-width: 1920px) {
+  .profile-container {
+    max-width: 800px;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    margin: 12px 0;
+    margin-right: 12px; /* Add right margin to create gap between buttons */
+  }
+
+  .profile-actions {
+    gap: 12px;
+  }
+}
+
+/* Media Query for 1366 x 768 (HD) */
+@media (max-width: 1366px) {
+  .profile-container {
+    max-width: 700px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    margin: 10px 0;
+    margin-right: 10px; /* Add right margin to create gap between buttons */
+  }
+
+  .profile-actions {
+    gap: 10px;
+  }
+}
+
+/* Media Query for 1440 x 900 */
+@media (max-width: 1440px) {
+  .profile-container {
+    max-width: 750px;
+  }
+
+  .btn {
+    padding: 11px 22px;
+    margin: 11px 0;
+    margin-right: 11px; /* Add right margin to create gap between buttons */
+  }
+
+  .profile-actions {
+    gap: 11px;
+  }
+}
+
+/* Media Query for 1536 x 864 */
+@media (max-width: 1536px) {
+  .profile-container {
+    max-width: 780px;
+  }
+
+  .btn {
+    padding: 11px 22px;
+    margin: 11px 0;
+    margin-right: 11px; /* Add right margin to create gap between buttons */
+  }
+
+  .profile-actions {
+    gap: 11px;
+  }
+}
+body {
+  overflow: auto; /* Enable scrolling */
+}
+
+.profile-container {
+  overflow: auto; /* Enable scrolling within the profile container */
+  max-height: 90vh; /* Set a maximum height to ensure the container is scrollable */
+}
+body {
+  overflow-y: scroll; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  scrollbar-width: none; /* For Firefox */
+}
+.profile-container {
+  overflow-y: scroll; /* Enable vertical scrolling within the profile container */
+  overflow-x: hidden; /* Disable horizontal scrolling within the profile container */
+  scrollbar-width: none; /* For Firefox */
+}
+.form-group label{
+  font-weight: 600;
+}
+.form-group p{
+  font-weight: 400;
+  background-color: rgb(226, 226, 226);
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+.input-field{
+  padding: 10px 10px !important;
+}
+.form-group p{
+  height: 1cm;
+}

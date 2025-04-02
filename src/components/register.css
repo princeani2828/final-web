@@ -1,0 +1,144 @@
+
+  .register-form {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .register-form h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .form-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-section h3 {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .register-form input[type="text"],
+  .register-form input[type="email"],
+  .register-form input[type="password"],
+  .register-form input[type="number"],
+  .register-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .register-form select {
+    height: 40px;
+  }
+  
+  .register-form .submit-btn {
+    background-color: #12bb1d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .register-form .submit-btn:hover {
+    background-color: #4cae4c;
+  }
+  
+  .login-link {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .login-redirect {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+  }
+  .login-link a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  .register-form {
+    overflow-y: auto;
+    max-height: 80vh;
+  }
+  .register-form {
+    width: 100%;
+    max-width: 800px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
+  .register-form {
+    overflow-y: scroll;
+    scrollbar-width: none; /* For Firefox */
+  }
+
+  .register-form::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  @media (max-width: 768px) {
+    .register-form {
+      padding: 10px;
+    }
+
+    .form-section {
+      padding: 10px;
+    }
+
+    .register-form input[type="text"],
+    .register-form input[type="email"],
+    .register-form input[type="password"],
+    .register-form input[type="number"],
+    .register-form select {
+      font-size: 14px;
+    }
+
+    .register-form .submit-btn {
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .register-form {
+      padding: 5px;
+    }
+
+    .form-section {
+      padding: 5px;
+    }
+
+    .register-form input[type="text"],
+    .register-form input[type="email"],
+    .register-form input[type="password"],
+    .register-form input[type="number"],
+    .register-form select {
+      font-size: 12px;
+    }
+
+    .register-form .submit-btn {
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+  }

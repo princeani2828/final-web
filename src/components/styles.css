@@ -1,0 +1,442 @@
+body {
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Full-page container */
+.app-container {
+  min-height: 80vh; /* Adjust height to be smaller than auth-inner */
+  height: 90vh; /* Adjust height to be smaller than auth-inner */
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 50px; /* Space for fixed bottom nav */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 0.5rem; /* Optional: Add rounded edges */
+  margin: 1rem 0; /* Add gap at the top and bottom */
+}
+
+/* Header */
+.app-header {
+  color: black;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* Adjust the value as needed */
+}
+
+.logo-image {
+  height: 1.75rem;
+  width: 1.25rem;
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.quote {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+  width: 100%;
+}
+
+/* Feature Grid - Two Columns */
+.feature-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-template-rows: 1fr 1fr; /* Two equal rows */
+  gap: 10px; /* Reduce spacing */
+  width: fit-content; /* Make the container wrap tightly */
+  padding: 10px;
+  background-color: #ffffff; /* Optional background */
+}
+
+
+/* Feature Buttons - Full width inside grid */
+.feature-card {
+  width: 100%;
+  border-radius: 1rem;
+  padding: 0.25rem; /* Reduce padding */
+  text-align: center;
+  transition: transform 0.2s;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 0.65rem; /* Reduce font size */
+  font-weight: 600;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+.feature-card.scan {
+  background-color: #f5efd6;
+}
+
+.feature-card.edit {
+  background-color: #ffeeb4;
+}
+
+.feature-card.convert {
+  background-color: #e5f5d6;
+}
+
+.feature-card.ask-ai {
+  background-color: #ffe4b4;
+}
+
+.icon-container {
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.card-description {
+  font-size: 0.5rem;
+  color: #666;
+}
+/* Bottom navigation styles */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1c1c1e;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #9ca3af;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-icon:hover,
+.nav-icon.active {
+  color: #22c55e;
+}
+
+.scan-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #e5f5d6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1.5rem;
+  cursor: pointer;
+}
+
+.scan-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: black;
+}
+
+/* Cart page styles */
+.cart-header {
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #22c55e;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .main-content {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .feature-grid {
+    gap: 1rem;
+  }
+
+  .feature-card {
+    padding: 0.5rem; /* Adjust padding for larger screens */
+  }
+}
+
+@media (max-width: 767px) {
+  
+
+  .bottom-nav {
+    padding: 0.5rem 1rem;
+  }
+
+  .scan-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: -1.5rem;
+  }
+
+  .scan-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header {
+    padding: 1rem;
+  }
+
+  .feature-card {
+    width: 100%;
+    padding: 0.25rem; /* Further reduce padding for very small screens */
+  }
+
+  .search-input {
+    height: 2.5rem;
+    padding: 0 0.75rem 0 2.5rem;
+  }
+
+  .bottom-nav {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .scan-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: -1.5rem;
+  }
+
+  .scan-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw; /* Adjust height to add gap at top and bottom */
+  /* Add padding to ensure content doesn't touch the edges */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+ /* Make edges rounded */
+/* Add gap at the top and bottom */
+  background-color: #ffffff; /* Optional: Add background color for better visibility */
+}
+
+.auth-inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0px !important;
+  height: 100vh;
+  width: 100vw; /* Adjust height to add gap at top and bottom / / Add padding to ensure content doesn't touch the edges */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+ /* Make edges rounded */
+ padding: 10px 20px;
+  /* Add gap at the top and bottom */
+  background-color: #ffffff; /* Optional: Add background color for better visibility */
+}
+.logo{
+  width: 4cm;
+  margin-bottom: 50px;
+}
+.login-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+
+}
+.form-control{
+  width: 100% !important;
+  height: 1.2cm;
+}
+.mb-3{
+  width: 100%;
+}
+.register-form h2{
+  margin-bottom: 20px;
+  color: #6D9D39;
+}
+.login-link{
+  font-size: small;
+  margin-top: 15px;
+}
+.form-section{
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+}
+.register-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-section h3{
+  margin-bottom: 0px;
+}
+.form-section input{
+  background-color: #f0f0f0;
+  border-radius: 5px !important;
+  border: none !important;
+}
+.submit-btn{
+  border-radius: 10px !important;
+  background-color: #6D9D39 !important;
+  width: 95% !important;
+}
+.login-link a{
+  color: #6D9D39;
+}
+.auth-wrapper h3 {
+  color: #000000;
+  font-size: 22px;
+}
+.form-section h3{
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  font-weight: 300;
+}
+.btn {
+  background-color: #6D9D39 !important;
+  color: white !important;
+  font-weight: 400;
+}
+.d-grid{
+  width: 100%;
+}
+.mb-3>label{
+  font-size: 15px !important;
+  font-weight: 200;
+}
+.forgot-password a{
+  color: #6D9D39;
+}
+.register-form{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 500px) {
+  .login-form{
+
+    width: 60%;
+  }
+  .logo {
+    width: 7cm;
+    margin-bottom: 50px;
+}
+}
+@media (min-width: 700px) {
+  .login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  
+  
+  }
+  .logo {
+    width: 7cm;
+    margin-bottom: 50px;
+}
+}
+@media (max-width: 480px) {
+  .app-container {
+    margin: auto;
+    height: auto;
+    min-height: 100vh;
+    justify-content: center;
+  }
+}
+.feature-card{
+  width: 4cm;
+  height: 4cm;
+}
+.quotediv{
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #e8e8e8;
+}
+.logo-icon>img{
+  width: 7cm;
+}
+.app-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-content{
+  flex-grow: 0 !important;
+  overflow: hidden;
+}
+.app-container{
+  width: 100vw;
+}
+@media (max-width: 480px) {
+  .app-container {
+      width: 100% !important;
+  }
+}
+.auth-inner>div{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

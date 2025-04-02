@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'); /* Import Roboto font */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #d6fe50 0%, #f6d365 50%, #fda085 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.edit-profile-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  overflow: auto; /* Enable scrolling */
+  max-height: 90vh; /* Ensures content is scrollable */
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+.user-details {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group p {
+  font-weight: 400;
+  background-color: rgb(226, 226, 226);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.save-button {
+  background-color: #12bb1d;
+  color: white;
+  margin: 0px !important;
+}
+
+.save-button:hover {
+  background-color: #0fa01a;
+}
+
+.cancel-button {
+  background-color: #ff4c4c;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #e63e3e;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .edit-profile-container {
+    padding: 15px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .profile-actions {
+    flex-direction: column;
+  }
+}
+
+/* Smooth scrolling and scrollbar styling */
+body {
+  overflow-y: scroll; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  scrollbar-width: none; /* For Firefox */
+}
+
+.edit-profile-container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none; /* For Firefox */
+}
